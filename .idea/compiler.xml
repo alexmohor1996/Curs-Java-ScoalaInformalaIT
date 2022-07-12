@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="HundredNumbersSum" />
+        <module name="PrimeNumbers" />
+        <module name="JavaOOPConceptsII" />
+        <module name="Bubblesort" />
+        <module name="UnitTesting" />
+        <module name="SmallestNumberFromAnArray" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Bubblesort" target="1.5" />
+      <module name="HundredNumbersSum" target="1.5" />
+      <module name="Java-OOP-Concepts-I" target="18" />
+      <module name="JavaOOPConceptsII" target="18" />
+      <module name="PrimeNumbers" target="1.5" />
+      <module name="SmallestNumberFromAnArray" target="1.5" />
+      <module name="UnitTesting" target="18" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

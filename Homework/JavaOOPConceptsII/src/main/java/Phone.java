@@ -16,7 +16,7 @@ public class Phone implements Device {
 
 
     public final ArrayList<Contact> contacts = new ArrayList<>();
-    void AddContacts(int index, long phone, String first_name, String last_name)
+    void AddContacts(int index, int phone, String first_name, String last_name)
     {
         Contact contact = new Contact(index, phone, first_name, last_name);
 

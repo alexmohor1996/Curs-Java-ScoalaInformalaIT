@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Homework/Bubblesort/Bubblesort.iml" filepath="$PROJECT_DIR$/Homework/Bubblesort/Bubblesort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Curs-Java-ScoalaInformalaIT.iml" filepath="$PROJECT_DIR$/.idea/Curs-Java-ScoalaInformalaIT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework/HundredNumbersSum/HundredNumbersSum.iml" filepath="$PROJECT_DIR$/Homework/HundredNumbersSum/HundredNumbersSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework/JavaOOPConceptsII/JavaOOPConceptsII.iml" filepath="$PROJECT_DIR$/Homework/JavaOOPConceptsII/JavaOOPConceptsII.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework/PrimeNumbers/PrimeNumbers.iml" filepath="$PROJECT_DIR$/Homework/PrimeNumbers/PrimeNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework/SmallestNumberFromAnArray/SmallestNumberFromAnArray.iml" filepath="$PROJECT_DIR$/Homework/SmallestNumberFromAnArray/SmallestNumberFromAnArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework/UnitTesting/UnitTesting.iml" filepath="$PROJECT_DIR$/Homework/UnitTesting/UnitTesting.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bubblesort/Bubblesort.iml" filepath="$PROJECT_DIR$/Bubblesort/Bubblesort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Homework.iml" filepath="$PROJECT_DIR$/.idea/Homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HundredNumbersSum/HundredNumbersSum.iml" filepath="$PROJECT_DIR$/HundredNumbersSum/HundredNumbersSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaOOPConcepts/Java-OOP-Concepts-I.iml" filepath="$PROJECT_DIR$/JavaOOPConcepts/Java-OOP-Concepts-I.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaOOPConceptsII/JavaOOPConceptsII.iml" filepath="$PROJECT_DIR$/JavaOOPConceptsII/JavaOOPConceptsII.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" filepath="$PROJECT_DIR$/PrimeNumbers/PrimeNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmallestNumberFromAnArray/SmallestNumberFromAnArray.iml" filepath="$PROJECT_DIR$/SmallestNumberFromAnArray/SmallestNumberFromAnArray.iml" />
+    </modules>
+  </component>
+</project>
