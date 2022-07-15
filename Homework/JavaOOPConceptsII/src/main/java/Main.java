@@ -12,6 +12,17 @@ public class Main {
 
         phone.ListContacts();
 
+        System.out.println();
+        phone.SendMessage("+40722505037", "This is a message to the first contact in the list");
+        phone.ListMessages("+40722505037");
+
+        System.out.println();
+
+        phone.SendMessage("+40721251251", "This is a message to the second contact in the list");
+
+        phone.Call("+40721251251");
+        phone.ViewHistory();
+
     }
 
 

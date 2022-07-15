@@ -8,10 +8,14 @@ public class Phone implements Device {
     String phone_number;
     String first_name;
     String last_name;
+    final int message_length = 500;
+
+
+
 
     public void Call()
     {
-        System.out.println("Calling...");
+
     }
 
     @Override
@@ -19,6 +23,7 @@ public class Phone implements Device {
 
     }
     ArrayList<Contact> contacts = new ArrayList<>();
+
     public void AddContacts(int index, String phone_number, String first_name, String last_name)
     {
         contacts.add(new Contact(index, phone_number, first_name, last_name));
@@ -31,24 +36,43 @@ public class Phone implements Device {
         }
     }
 
-    public void Sms(int number, String message)
+    ArrayList<Sms> msg = new ArrayList<>();
+    public void SendMessage(String phone_number, String message)
     {
-        Scanner sc = new Scanner(System.in);
-        int char_length = 500;
-
-        if (message.length() > char_length)
+        if (message.length() > 500)
         {
-            System.out.println("Maximum message characters length is 500 !");
+            System.out.println("You cannot have more than 5 characters in the message");
+            return;
         }
-
-        while (Objects.equals(message, " ") || message.length() <= char_length)
-        {
-            message = sc.nextLine();
-
-        }
-        System.out.println("Message " + message + "sent to " + number);
+        msg.add(new Sms(phone_number, message));
+        System.out.println("Sending message \" " + msg + " \" to :" + phone_number);
     }
 
+    public void ListMessages(String phone_number)
+    {
+        for (Sms mesg : msg)
+        {
+            System.out.println("Messages History: ");
+            System.out.println(phone_number + ": " + mesg);
+        }
+    }
+
+    ArrayList<Calling> calls = new ArrayList<>();
+    public void Call(String phone_number)
+    {
+        calls.add(new Calling(phone_number));
+        System.out.println();
+        System.out.println("Calling.. " + calls);
+    }
+
+    public void ViewHistory()
+    {
+        for (Calling call : calls)
+        {
+            System.out.println("Calling History: ");
+            System.out.println(call);
+        }
+    }
 
 
 }
