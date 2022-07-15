@@ -1,8 +1,13 @@
-import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Phone implements Device {
+
+    int index;
+    String phone_number;
+    String first_name;
+    String last_name;
 
     public void Call()
     {
@@ -13,15 +18,17 @@ public class Phone implements Device {
     public void Sms() {
 
     }
-
-
-    public final ArrayList<Contact> contacts = new ArrayList<>();
-    void AddContacts(int index, int phone, String first_name, String last_name)
+    ArrayList<Contact> contacts = new ArrayList<>();
+    public void AddContacts(int index, String phone_number, String first_name, String last_name)
     {
-        Contact contact = new Contact(index, phone, first_name, last_name);
+        contacts.add(new Contact(index, phone_number, first_name, last_name));
+    }
 
-        contacts.add(contact);
-
+    public void ListContacts()
+    {
+        for (Contact contact : contacts) {
+            System.out.println(contact);
+        }
     }
 
     public void Sms(int number, String message)
@@ -34,7 +41,7 @@ public class Phone implements Device {
             System.out.println("Maximum message characters length is 500 !");
         }
 
-        while (message == " " || message.length() <= char_length)
+        while (Objects.equals(message, " ") || message.length() <= char_length)
         {
             message = sc.nextLine();
 
@@ -42,24 +49,6 @@ public class Phone implements Device {
         System.out.println("Message " + message + "sent to " + number);
     }
 
-    public void Call(int number)
-    {
-        System.out.println("Calling " + number);
-    }
 
-    public void ListContacts()
-    {
-        System.out.println(contacts);
-    }
-
-    public void ListMessages()
-    {
-
-    }
-
-    public void ViewHistory()
-    {
-
-    }
 
 }

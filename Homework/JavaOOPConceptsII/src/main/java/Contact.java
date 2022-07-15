@@ -1,10 +1,11 @@
 public class Contact {
-    private final int index;
-    private final long phone_number;
-    private final String first_name;
-    private final String last_name;
 
-    public Contact(int index, long phone_number, String first_name, String last_name)
+    int index;
+    String phone_number;
+    String first_name;
+    String last_name;
+
+    Contact(int index, String phone_number, String first_name, String last_name)
     {
         this.index = index;
         this.phone_number = phone_number;
@@ -12,24 +13,30 @@ public class Contact {
         this.last_name = last_name;
     }
 
-    public int GetIndex()
+    public int getIndex()
     {
-        return index;
+        return this.index;
     }
 
-    public long GetPhoneNumber()
+    public String getPhoneNumber()
     {
-        return phone_number;
+        return this.phone_number;
     }
 
-    public String GetFirstName()
+    public String getFirstName()
     {
-        return first_name;
+        return this.first_name;
     }
 
-    public String GetLastName()
+    public String getLastName()
     {
-        return last_name;
+        return this.last_name;
+    }
+
+    @Override
+    public String toString()
+    {
+        return this.index + ". " + "Name: " + this.first_name + "/ Last Name: " + this.last_name + "/ Phone: " + this.phone_number;
     }
 
 }
