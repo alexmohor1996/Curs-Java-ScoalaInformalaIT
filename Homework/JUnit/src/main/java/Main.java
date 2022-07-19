@@ -61,7 +61,7 @@ public class Main{
                 op = true;
                 continue;
             }
-            if (Operator.MINUS.getOperator().equals(s)) {
+                if (Operator.MINUS.getOperator().equals(s)) {
                 checkOperator(addList, minusList, op, exp.substring(checkPoint, i).trim());
                 checkPoint = i + 1;
                 op = false;

@@ -8,8 +8,7 @@ public class MainTest {
     public void calculate()
     {
         Main m_calc = new Main();
-        Assert.assertEquals("1090 mm", m_calc.calculator("10 cm + 1 m - 10 mm"));
-        string.split(/+|-/);
+        Assert.assertEquals(1090, m_calc.calculator("10 cm + 1 m - 10 mm"));
     }
 
 }
