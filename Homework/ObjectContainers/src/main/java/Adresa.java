@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Adresa {
 
@@ -7,12 +8,6 @@ public class Adresa {
     public Adresa(String name)
     {
         this.name = name;
-    }
-
-    public void AddAddress(String name)
-    {
-        ArrayList<Adresa> address = new ArrayList<>();
-        address.add(new Adresa(name));
     }
 
     public String getName()
